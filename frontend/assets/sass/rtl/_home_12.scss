@@ -1,0 +1,47 @@
+/* Home 12 ---------------------------------- */
+.about-wrap12 .about-counter-wrap .about-counter-card:not(:first-child) {
+    margin-right: -26px;
+    margin-left: 0;
+    @include sm {
+        margin-right: 0;
+    }
+}
+
+.testimonial-thumb9-1 {
+    margin-right: -330px;
+    margin-left: 0;
+    @include xxl {
+        margin-right: -255px;
+    }
+    @include ml {
+        margin-right: 0;
+    }
+}
+.testi-slider9 {
+    margin-left: -430px;
+    margin-right: 0;
+    @include ml {
+        margin-left: 0;
+    }
+}
+.testi-card.style7 {
+    margin: 0;
+}
+
+.advantage-thumb1-1 {
+    left: 0;
+    right: auto;
+}
+
+.advantage-list-wrap {
+    .advantage-single-list {
+        &:after {
+            right: 30px;
+            left: auto;
+        }
+        .advantage-number {
+            margin-left: 40px;
+            margin-right: 0;
+        }
+    }
+}

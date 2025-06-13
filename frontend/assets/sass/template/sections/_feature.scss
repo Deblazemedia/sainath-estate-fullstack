@@ -1,0 +1,67 @@
+
+/* Feature Area ---------------------------------- */
+.feature-thumb1-1 {
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: -38px;
+    img {
+        width: 100%;
+    }
+    @include lg {
+        margin-top: 0;
+    }
+}
+.feature-list-wrap {
+    display: flex;
+    gap: 40px;
+    @include sm {
+        display: block;
+        .feature-card {
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+.feature-card {
+    text-align: center;
+    .icon-wrap {
+        border-radius: 20px;
+        background: rgba($color: #ffffff, $alpha: 0.1);
+        padding: 25px 20px;
+    }
+    .box-icon {
+        margin-bottom: 20px;
+        img {
+            transition: 0.4s;
+        }
+    }
+    .box-title {
+        color: $white-color;
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: -0.35em;
+        @include xl {
+            font-size: 20px;
+        }
+    }
+    .box-text {
+        color: $light-color;
+        margin-top: 23px;
+        text-align: left;
+        @include ml {
+            font-size: 14px;
+        }
+        @include sm {
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+    &:hover {
+        .box-icon {
+            img {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}

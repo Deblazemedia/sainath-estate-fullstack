@@ -1,0 +1,123 @@
+/* Home 13 ---------------------------------- */
+.hero-13 {
+    .property-search-form {
+        direction: ltr;
+        padding: 30px 40px;
+        @include xs {
+            padding: 0 20px;
+        }
+        .form-group {
+            margin-left: 0;
+            max-width: 200px;
+            margin-right: 0;
+            > i {
+                right: auto;
+                left: 0;
+            }
+            @include lg {
+                max-width: none;
+            }
+        }
+        .form-select {
+            border-left: 1px solid var(--theme-color);
+            border-right: 0;
+            @include lg {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+        .th-btn {
+            margin-left: auto;
+            margin-right: 0;
+            @include lg {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+.about-wrap13-1 .about-info-list li:after {
+    right: 0;
+    left: auto;
+}
+.property-card8 {
+    .property-card-details {
+        &:after {
+            left: auto;
+            right: 0;
+            transform: translate(100%, -50%) rotate(180deg);
+        }
+    }
+    
+    .property-card-meta {
+        span {
+            border-left: 1px solid $theme-color;
+            border-right: 0;
+            padding-left: 26px;
+            margin-left: 26px;
+            padding-right: 0;
+            margin-right: 0;
+            @include xxl {
+                padding-left: 0;
+                margin-left: 10px;
+                border: 0;
+            }
+            @include xl {
+                border-left: 0;
+                padding-left: 0;
+                margin-left: 0px;
+            }
+            &:last-child {
+                border-left: 0;
+                padding-left: 0;
+                margin-left: 0;
+            }
+        }
+    }
+    &:nth-child(4n+3),
+    &:nth-child(4n+4) {
+        flex-direction: row-reverse;
+        .property-card-details {
+            &:after {
+                left: 0;
+                right: auto;
+                transform: translate(-100%, -50%) rotateY(0deg);
+            }
+        }
+    }
+    @include ml {
+        &:nth-child(4n+2),
+        &:nth-child(4n+4) {
+            .property-card-details {
+                &:after {
+                    right: auto;
+                    left: 0;
+                    transform: translate(-100%, -50%) rotateY(0deg);
+                }
+            }
+        }
+        &:nth-child(4n+3) {
+            flex-direction: row;
+            .property-card-details {
+                &:after {
+                    right: 0;
+                    left: auto;
+                    transform: translate(100%, -50%) rotateY(180deg);
+                }
+            }
+        }
+    }
+}
+.product-wrap1 .product-hotspot-dot {
+    direction: ltr;
+}
+.award-wrap3 {
+    margin-right: -596px;
+    margin-left: 0;
+    @include xxl {
+        margin-right: -480px;
+    }
+    @include ml {
+        margin-right: 0;
+    }
+}

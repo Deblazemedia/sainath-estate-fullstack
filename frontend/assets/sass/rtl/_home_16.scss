@@ -1,0 +1,104 @@
+/* Home 16 ---------------------------------- */
+.hero-16-search-wrap {
+    .property-search-form {
+        padding-left: 0;
+        .btn-wrap {
+            margin-right: auto;
+            margin-left: 0;
+            @include ml {
+                margin-right: 30px;
+            }
+            @include xl {
+                margin-right: 0;
+            }
+        }
+        .form-group {
+            margin-right: 100px;
+            margin-left: 0;
+            @include xxl {
+                margin-right: 30px;
+            }
+            @include xl {
+                margin: 20px 40px 0;
+                input {
+                    padding-left: 0;
+                }
+            }
+            @include xs {
+                margin: 20px 30px 0;
+            }
+        }
+        .form-select {
+            @include ml {
+                border: 0;
+                padding-left: 0;
+            }
+            @include xl {
+                margin: 20px 40px 0;
+                width: calc(50% - 83px);
+            }
+            @include xs {
+                width: 100%;
+                margin: 20px 30px 0;
+            }
+        }
+    }
+}
+
+.property-card11 {
+    .property-card-meta {
+        span {
+            border-left: 1px solid rgba($color: #364440, $alpha: 0.3);
+            padding-left: 13px;
+            margin-left: 9px;
+            border-right: 0;
+            padding-right: 0;
+            margin-right: 0;
+            @include ml {
+                border-left: 0;
+                padding-left: 0;
+                margin-left: 10px;
+            }
+            &:last-child {
+                border-left: 0;
+                padding-left: 0;
+                margin-left: 0;
+            }
+        }
+        @include md {
+            gap: 15px;
+            flex-wrap: wrap;
+            span {
+                margin: 0;
+            }
+        }
+    }
+    .btn-wrap {
+        gap: 20px 10px;
+    }
+}
+
+/* Testi Card 12---------------------------------- */
+.testi-thumb-wrap12 {
+    padding-left: 85px;
+    padding-right: 0;
+    margin-left: -210px;
+    margin-right: 0;
+    .img2 {
+        left: 0;
+        right: auto;
+    }
+    @include xxl {
+        margin-right: -40px;
+        margin-left: -40px;
+        padding-left: 30px;
+    }
+    @include ml {
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 80px;
+    }
+    @include vxs {
+        padding-left: 0;
+    }
+}
